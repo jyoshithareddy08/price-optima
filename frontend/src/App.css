@@ -1,0 +1,400 @@
+/* ===== MODERN DYNAMIC PRICING DASHBOARD STYLES ===== */
+
+.App {
+  text-align: center;
+}
+
+/* ===== LAYOUT ENHANCEMENTS ===== */
+.ant-layout {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(26, 26, 46, 0.8) !important;
+  border-bottom: 1px solid rgba(45, 45, 77, 0.5);
+}
+
+.ant-layout-sider {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%) !important;
+  border-right: 1px solid rgba(45, 45, 77, 0.5);
+}
+
+/* ===== CARD ENHANCEMENTS ===== */
+.ant-card {
+  border-radius: 16px !important;
+  border: 1px solid rgba(45, 45, 77, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid rgba(45, 45, 77, 0.3) !important;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ant-card-head-title {
+  font-weight: 700;
+  font-size: 18px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== STATISTIC ENHANCEMENTS ===== */
+.ant-statistic {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ant-statistic-content {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ant-statistic-title {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== TABLE ENHANCEMENTS ===== */
+.ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: linear-gradient(135deg, #1e1b4b, #3730a3) !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+  padding: 16px 12px;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(45, 45, 77, 0.3);
+  transition: all 0.2s ease;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: rgba(124, 58, 237, 0.1) !important;
+  transform: scale(1.01);
+}
+
+.ant-table-tbody > tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ===== BUTTON ENHANCEMENTS ===== */
+.ant-btn {
+  border-radius: 12px !important;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.ant-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.ant-btn:hover::before {
+  left: 100%;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5) !important;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+}
+
+.ant-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.4);
+}
+
+/* ===== INPUT ENHANCEMENTS ===== */
+.ant-input, .ant-input-textarea {
+  border-radius: 12px !important;
+  border: 2px solid rgba(45, 45, 77, 0.3);
+  background: rgba(26, 26, 46, 0.8) !important;
+  transition: all 0.3s ease;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.ant-input:focus, .ant-input-textarea:focus,
+.ant-input-focused, .ant-input-textarea-focused {
+  border-color: #7c3aed !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1) !important;
+  background: rgba(26, 26, 46, 0.9) !important;
+}
+
+.ant-input-textarea textarea {
+  background: transparent !important;
+  border: none !important;
+  padding: 16px !important;
+}
+
+/* ===== PROGRESS BAR ENHANCEMENTS ===== */
+.ant-progress {
+  margin: 8px 0;
+}
+
+.ant-progress-line {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-progress-bg {
+  border-radius: 8px;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== BADGE & TAG ENHANCEMENTS ===== */
+.ant-badge {
+  font-weight: 600;
+}
+
+.ant-tag {
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.ant-tag-green {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  color: white !important;
+}
+
+.ant-tag-blue {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+  color: white !important;
+}
+
+.ant-tag-purple {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6) !important;
+  color: white !important;
+}
+
+.ant-tag-red {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  color: white !important;
+}
+
+/* ===== SIDEBAR ENHANCEMENTS ===== */
+.ant-layout-sider-trigger {
+  background: rgba(26, 26, 46, 0.8) !important;
+  border-top: 1px solid rgba(45, 45, 77, 0.3);
+}
+
+/* ===== ALERT ENHANCEMENTS ===== */
+.ant-alert {
+  border-radius: 12px;
+  border: none;
+  backdrop-filter: blur(10px);
+}
+
+.ant-alert-success {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)) !important;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.ant-alert-error {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)) !important;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* ===== CUSTOM SCROLLBARS ===== */
+.ant-table-body::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+  background: rgba(45, 45, 77, 0.2);
+  border-radius: 4px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  border-radius: 4px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #6d28d9, #db2777);
+}
+
+/* Custom scrollbar for entire app */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 35, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #6d28d9, #4338ca);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.6);
+  }
+}
+
+.ant-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.ant-statistic {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 16px;
+  }
+  
+  .ant-card {
+    margin: 8px;
+    border-radius: 12px !important;
+  }
+  
+  .ant-statistic {
+    padding: 12px;
+  }
+  
+  .ant-statistic-content {
+    font-size: 16px;
+  }
+  
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ant-card-head-title {
+    font-size: 16px;
+  }
+  
+  .ant-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* ===== LOADING STATES ===== */
+.ant-spin-nested-loading {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ant-spin-container::after {
+  background: rgba(15, 15, 35, 0.8);
+  border-radius: 16px;
+}
+
+/* ===== TOOLTIP ENHANCEMENTS ===== */
+.ant-tooltip {
+  border-radius: 8px;
+}
+
+.ant-tooltip-inner {
+  background: linear-gradient(135deg, #1e1b4b, #3730a3);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ===== GRADIENT TEXT UTILITIES ===== */
+.gradient-text {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-purple {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== GLOW EFFECTS ===== */
+.glow-effect {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* ===== DARK MODE TRANSITIONS ===== */
+.ant-layout,
+.ant-card,
+.ant-btn,
+.ant-input,
+.ant-table {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ===== CUSTOM SHADOWS ===== */
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-shadow:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== FOCUS INDICATORS ===== */
+.ant-btn:focus,
+.ant-input:focus,
+.ant-select:focus .ant-select-selector {
+  outline: 2px solid rgba(124, 58, 237, 0.5);
+  outline-offset: 2px;
+}
